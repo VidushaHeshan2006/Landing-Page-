@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="pricing.css" />
+  </head>
+
+  <body>
+    <header>Pricing Plans</header>
+
+    <!-- PRICING CARDS SECTION -->
+    <section class="pricing-section">
+      <h2 class="pricing-title">Choose the Plan That Fits You</h2>
+
+      <div class="pricing-cards">
+        <!-- Basic -->
+        <div class="pricing-card">
+          <div class="price-header">Basic</div>
+          <div class="price">$0 <span>/ month</span></div>
+          <ul>
+            <li>Manual Expense Tracking</li>
+            <li>Basic Budget Planner</li>
+            <li>Daily Reminders</li>
+            <li>Up to 3 Saving Goals</li>
+          </ul>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="pricing-card best-plan">
+          <div class="price-header">Pro</div>
+          <div class="price">$9.99 <span>/ month</span></div>
+          <ul>
+            <li>All Basic Features</li>
+            <li>AI Spending Insights</li>
+            <li>Smart Reports</li>
+            <li>Unlimited Goals</li>
+            <li>Custom Categories</li>
+            <li>Priority Support</li>
+          </ul>
+          <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card">
+          <div class="price-header">Premium</div>
+          <div class="price">$19.99 <span>/ month</span></div>
+          <ul>
+            <li>Everything in Pro</li>
+            <li>Advanced AI Forecast</li>
+            <li>Auto Expense Detection</li>
+            <li>Multiple Currencies</li>
+            <li>Family / Team Sharing</li>
+          </ul>
+          <a href="#" class="btn">Upgrade Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOGGLE -->
+    <div class="toggle-container">
+      <p>Show Detailed Comparison</p>
+      <label class="switch">
+        <input type="checkbox" id="compareToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- FEATURE COMPARISON -->
+    <section class="comparison-section" id="comparisonTable">
+      <h2 class="section-title">Feature Comparison</h2>
+
+      <div class="comparison-table">
+        <div class="table-header">
+          <div class="feature-title">Feature</div>
+          <div class="plan">Basic</div>
+          <div class="plan">Pro</div>
+          <div class="plan">Premium</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">Cloud Storage</div>
+          <div class="plan">5GB</div>
+          <div class="plan">50GB</div>
+          <div class="plan">Unlimited</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">Support Level</div>
+          <div class="plan">Email</div>
+          <div class="plan">Priority</div>
+          <div class="plan">24/7 Dedicated</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">Devices</div>
+          <div class="plan">1</div>
+          <div class="plan">5</div>
+          <div class="plan">Unlimited</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">AI Assistant</div>
+          <div class="plan">No</div>
+          <div class="plan">Yes</div>
+          <div class="plan">Premium AI</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">Data Analytics</div>
+          <div class="plan">No</div>
+          <div class="plan">Basic</div>
+          <div class="plan">Advanced</div>
+        </div>
+
+        <div class="table-row">
+          <div class="feature-title">Custom Branding</div>
+          <div class="plan">No</div>
+          <div class="plan">No</div>
+          <div class="plan">Yes</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="pricing.js"></script>
+  </body>
+</html>
