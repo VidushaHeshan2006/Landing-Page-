@@ -346,7 +346,7 @@ footer {
 /* ICON STYLES */
 .wrapper .icon {
   position: relative;
-  background-color: #ffffff;
+  background-color: #e2dfdf;
   border-radius: 50%;
   margin: 10px;
   width: 50px;
@@ -370,7 +370,7 @@ footer {
   top: 0;
   line-height: 1.5;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #fffbfb;
   color: #ffffff;
   padding: 5px 8px;
   border-radius: 5px;
@@ -406,7 +406,7 @@ footer {
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background-color: #3b5999;
-  color: #ffffff;
+  color: #aaaaaa;
 }
 
 .wrapper .instagram:hover,
