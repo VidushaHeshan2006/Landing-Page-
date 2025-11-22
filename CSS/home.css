@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.gradient-text {
+  font-size: 48px; /* adjust as needed */
+  font-weight: bold;
+  background:  -webkit-linear-gradient(#14793d, #11e3ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.image{
+    width: auto;
+    height: fit-content;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e5e7eb;
@@ -38,10 +53,9 @@ nav .container {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #10b981;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
 }
 
 .logo img {
