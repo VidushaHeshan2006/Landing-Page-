@@ -39,7 +39,6 @@
     padding: 25px;
     border-radius: 14px;
     text-align: center;
-    backdrop-filter: blur(8px);
     transition: 0.3s;
 }
 
