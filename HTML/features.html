@@ -3,24 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Features - BudgetBuddy</title>
     <link rel="stylesheet" href="/CSS/style.css">
+=======
+    <title>Features - SaveOnix</title>
+
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/CSS/baseStyle.css"/>
+    <link rel="stylesheet" href="/CSS/style.css"/>
+    
+    
+>>>>>>> c3cd876b433368cee6fdc2f490696f7158c30762
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Images/saveonix-2.jpg" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">Budget<span>Buddy</span></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Stores</a></li>
-            <li><a href="#">Discounts</a></li>
-            <li><a href="#">Admin</a></li>
-        </ul>
-    </nav>
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html" target="_blank">
+            <img
+              src="/Images/saveonix-2.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html" target="_blank">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html" target="_blank">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html" target="_blank">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html" target="_blank">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html" target="_blank">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+                target="_blank">Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/download.html"
+                target="_blank">Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -88,9 +150,65 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 BudgetBuddy | All Rights Reserved</p>
+
+    <!--</footer> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html" target="_blank">Features</a></li>
+              <li><a href="/HTML/pricing.html" target="_blank">Pricing</a></li>
+              <li><a href="/HTML/demo.html" target="_blank">Demo</a></li>
+              <li><a href="/HTML/download.html" target="_blank">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html" target="_blank">About Us</a></li>
+              <li><a href="/HTML/contact.html" target="_blank">Contact</a></li>
+              <li><a href="/HTML/faq.html" target="_blank">FAQs</a></li>
+              <li><a href="/HTML/careers.html" target="_blank">Careers</a></li>
+              <li><a href="/HTML/blog.html" target="_blank">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/privacy.html" target="_blank">Privacy Policy</a></li>
+              <li><a href="/HTML/privacy.html" target="_blank">Terms of Service</a></li>
+              <li><a href="/HTML/privacy.html" target="_blank">Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Find us on</h3>
+            <ul>
+              <li><a  href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="/Images/facebook-icon.png" width="auto" height="35">
+                </a></li>
+              <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                  <img src="/Images/icons8-instagram-logo-30.png" width="auto" height="35">
+                </a></li>
+              <li><a href="https://www.linkedin.com/in/saveonix-6baa91391/" target="_blank" aria-label="LinkedIn">
+                  <img src="/Images/linkedin-icon.png" width="auto" height="35">
+                </a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
 </body>
