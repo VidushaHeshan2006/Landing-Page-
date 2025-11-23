@@ -63,4 +63,10 @@
     color: #c7d5cf;
 }
 
+/* Center the last card if it's alone in the last row */
+
+.features-section .feature-card:last-child:nth-child(3n + 1) {
+    grid-column: 2;   /* Places it in the middle column */
+}
+
 
