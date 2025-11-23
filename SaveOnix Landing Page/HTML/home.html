@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveOnix - Save Smarter With AI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/baseStyle.css"/>
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <link rel="icon" type="image/x-icon" href="/Image/saveonix-icon.jpg" />
+    
+</head>
+<body>
+  <!-- ========================= SPLASH SCREEN ========================= -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/Image/saveonix-icon.jpg" class="splash-logo" alt="SaveOnix Logo">
+            <h1 class="splash-title">SaveOnix</h1>
+            <p class="splash-tagline">Save Smarter With AI</p>
+
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Begin Main Content -->
+    <div id="main-content" style="opacity: 0;">
+
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      
+      <nav class="navbar navbar-expand-md navbar-dark custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html">
+            <img
+              src="/Image/saveonix-icon.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center logo-img"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+              >Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/blank.html"
+              >Download</a
+              >
+
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <section class="hero main-2">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="gradient-text"> Take Control Of Your Finances - With Our AI Buddy</h1>
+                <p class="tagline">Smart, Simple, Secure</p>
+                <p class="description">
+                    All your money insights, finally in one place - track income, track spending, track savings and reach your goals with ease
+                </p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn-primary">Explore Features</a>
+                </div>
+                <div class="phone-mockup">
+                    <svg viewBox="0 0 300 600" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="20" y="20" width="260" height="560" rx="30" fill="#0a0a0a"/>
+                        <rect x="30" y="50" width="240" height="500" rx="20" fill="#191919"/>
+                        <circle cx="150" cy="35" r="3" fill="#10b981"/>
+                        
+                        <image  
+                            href="/Image/Screenshot 2025-11-22 122010.png"
+                            width = "240"
+                            height = "500"
+                            x = "30"
+                            y="60"
+
+                        />
+
+
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features to Help You Save</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Automatic Tracking</h3>
+                    <p>Effortlessly track all your expenses automatically with smart categorization</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Smart Emergency Fund Recommendations</h3>
+                    <p>Receive personalized suggestions to build an emergency fund for unexpected expenses</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>SMS Extraction</h3>
+                    <p>Automatically captures transactions from bank SMS messages</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Budget Coach</h3>
+                    <p>Get personalized financial advice powered by advanced AI</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Vault Goals</h3>
+                    <p>Set and achieve savings goals with intelligent recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Monthly Insights</h3>
+                    <p>Comprehensive financial reports to understand your spending patterns</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Discount Finder</h3>
+                    <p>Real-time alerts on deals and discounts to maximize savings</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Achievement Badges</h3>
+                    <p>Stay motivated with rewards for reaching your financial milestones</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Subscription Monitoring</h3>
+                    <p>Easily track all your subscriptions and avoid surprise charges.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📆</div>
+                    <h3>In-app Calendar for Bill Reminders</h3>
+                    <p>Never miss a due date—schedule bills and reminders directly in the app.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Shared Saving Vaults</h3>
+                    <p>Save together with friends or family in a shared vault for common goals.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Automatic expense categorization</h3>
+                    <p>Automatically sorts your expenses into categories so you can see where your money goes without any manual effort</p>
+                </div>     
+            </div>
+        </div>
+    </section>
+  
+    <!--</footer> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section col-md-3">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html">Features</a></li>
+              <li><a href="/HTML/pricing.html">Pricing</a></li>
+              <li><a href="/HTML/blank.html">Demo</a></li>
+              <li><a href="/HTML/blank.html">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html">About Us</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+              <li><a href="/HTML/faq.html">FAQs</a></li>
+              <li><a href="/HTML/blank.html">Careers</a></li>
+              <li><a href="/HTML/blank.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/blank.html">Privacy Policy</a></li>
+              <li><a href="/HTML/blank.html">Terms of Service</a></li>
+              <li><a href="/HTML/blank.html">Security</a></li>
+            </ul>
+          </div>
+            <div class="footer-section col-md-2">
+                <h3>Our Socials</h3>
+                <div class="footer-icon">
+                    <div class="wrapper" >
+                        <a href="https://www.facebook.com/profile.php?id=61583363505970" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/save.onix/" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="icon linkedin">
+                            <div class="tooltip">linkedin</div>
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" 
+    crossorigin="anonymous"></script>
+    <script src="/js/js/splash.js"></script>
+
+   
+</body>
+</html>
