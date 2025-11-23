@@ -78,31 +78,6 @@ nav .container {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Layout helpers */
 .container { max-width: 1100px; margin: 0 auto; padding: 28px; position: relative; z-index: 1; }
 .site-header { padding: 18px 0; }
@@ -190,9 +165,7 @@ a:focus, button:focus, input:focus, select:focus { outline: 3px solid rgba(16,18
 /* small utilities */
 .muted { opacity: 0.78; }
 
-/* End of CSS */
 
-/* Mobile Phone Background Element */
 .phone-bg {
     position: absolute;
     right: -80px;
