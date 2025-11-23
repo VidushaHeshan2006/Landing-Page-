@@ -1,3 +1,5 @@
+/* Bring page content above background */ 
+
 /* THEME COLORS */
 :root {
     --green: #10b981;
@@ -28,9 +30,9 @@
 
 .features-section {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);   /* always 3 columns on large screens */
     gap: 30px;
-    padding: 60px 50px;
+    padding: 2% 3%;
 }
 
 .feature-card {
@@ -39,7 +41,9 @@
     padding: 25px;
     border-radius: 14px;
     text-align: center;
+    backdrop-filter: blur(8px);
     transition: 0.3s;
+    
 }
 
 .feature-card:hover {
@@ -63,10 +67,16 @@
     color: #c7d5cf;
 }
 
-/* Center the last card if it's alone in the last row */
-
-.features-section .feature-card:last-child:nth-child(3n + 1) {
-    grid-column: 2;   /* Places it in the middle column */
+/* When screen goes below 850px → 2 columns */
+@media (max-width: 850px) {
+    .features-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
+/* When screen goes below 600px → 1 column */
+@media (max-width: 600px) {
+    .features-section {
+        grid-template-columns: 1fr;
+    }
+}
