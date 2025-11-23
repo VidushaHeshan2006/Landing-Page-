@@ -3,16 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="/CSS/about.css" />
+    <title>SaveOnix - About Us</title>
+
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/CSS/baseStyle.css"/>
+    <link rel="stylesheet" href="/CSS/about.css" /> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <link rel="icon" type="image/x-icon" href="/Image/saveonix-icon.jpg" />
   </head>
 
   <body>
-    <header>About Us</header>
+
+    <!-- ========================= SPLASH SCREEN ========================= -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/Image/saveonix-icon.jpg" class="splash-logo" alt="SaveOnix Logo">
+            <h1 class="splash-title">SaveOnix</h1>
+            <p class="splash-tagline">Save Smarter With AI</p>
+
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Begin Main Content -->
+    <div id="main-content" style="opacity: 0;">
+
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html">
+            <img
+              src="/Image/saveonix-icon.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center logo-img"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+              >Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/download.html"
+              >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main"></div>
 
     <section class="content fade">
       <h2>Our Story</h2>
-      <p>
+      <div class="s-1">
+      <p >
         SaveOnix was created to make saving money simple, clear, and
         stress-free. Many people struggle with managing their finances because
         traditional budgeting apps are either too complicated or too basic.
@@ -28,6 +113,7 @@
         users build better financial habits and achieve their goals with
         confidence..
       </p>
+      </div>
 
       <section class="mission-vision-section fade">
         <div class="mission-vision-container">
@@ -56,7 +142,7 @@
           <p>
             Email:
             <a href="mailto:dilshard.20230276@iit.ac.lk"
-              >dilshard.20230276@iit.ac.lk</a
+              class="email">dilshard.20230276@iit.ac.lk</a
             >
           </p>
         </div>
@@ -66,7 +152,7 @@
           <p>
             Email:
             <a href="mailto:nethmi.20241218@iit.ac.lk"
-              >nethmi.20241218@iit.ac.lk</a
+              class="email">nethmi.20241218@iit.ac.lk</a
             >
           </p>
         </div>
@@ -76,7 +162,7 @@
           <p>
             Email:
             <a href="mailto:tharindi.20240581@iit.ac.lk"
-              >tharindi.20240581@iit.ac.lk</a
+              class="email">tharindi.20240581@iit.ac.lk</a
             >
           </p>
         </div>
@@ -86,7 +172,7 @@
           <p>
             Email:
             <a href="mailto:chamuditha.20240511@iit.ac.lk"
-              >chamuditha.20240511@iit.ac.lk</a
+              class="email">chamuditha.20240511@iit.ac.lk</a
             >
           </p>
         </div>
@@ -96,7 +182,7 @@
           <p>
             Email:
             <a href="mailto:vidusha.20232890@iit.ac.lk"
-              >vidusha.20232890@iit.ac.lk</a
+              class="email">vidusha.20232890@iit.ac.lk</a
             >
           </p>
         </div>
@@ -106,17 +192,88 @@
           <p>
             Email:
             <a href="mailto:hazni.20232748@iit.ac.lk"
-              >hazni.20232748@iit.ac.lk</a
+              class="email">hazni.20232748@iit.ac.lk</a
             >
           </p>
         </div>
       </div>
 
       <div class="roadmap fade">
-        <img src="Road map.jpg" alt="Company Roadmap" class="roadmap-img" />
+        <img src="/Image/Road map.jpg" alt="Company Roadmap" class="roadmap-img" />
       </div>
     </section>
 
-    <script src="about.js"></script>
+    <!--</footer> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section col-md-3">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html">Features</a></li>
+              <li><a href="/HTML/pricing.html">Pricing</a></li>
+              <li><a href="/HTML/blank.html">Demo</a></li>
+              <li><a href="/HTML/blank.html">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html">About Us</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+              <li><a href="/HTML/faq.html">FAQs</a></li>
+              <li><a href="/HTML/blank.html">Careers</a></li>
+              <li><a href="/HTML/blank.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/blank.html">Privacy Policy</a></li>
+              <li><a href="/HTML/blank.html">Terms of Service</a></li>
+              <li><a href="/HTML/blank.html">Security</a></li>
+            </ul>
+          </div>
+            <div class="footer-section col-md-2">
+                <h3>Our Socials</h3>
+                <div class="footer-icon">
+                    <div class="wrapper" >
+                        <a href="https://www.facebook.com/profile.php?id=61583363505970" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/save.onix/" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="icon linkedin">
+                            <div class="tooltip">linkedin</div>
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="/js/js/bootstrap.min.js"></script>
+    <script src="/js/js/splash.js"></script>
+    <script src="/js/js/about.js"></script>
   </body>
 </html>
