@@ -7,191 +7,117 @@
   <title>Contact Page</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous">
-  <link href="allStyles.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="../Image/saveonix-2.jpg" />
+  <link href="/CSS/baseStyle.css" rel="stylesheet" />
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  
+  
+  <link rel="icon" type="image/x-icon" href="/Image/saveonix-icon.jpg" />
+
   <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: #000000;
+    .c-form{
+      background: #0a3d2a89;
     }
 
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="2" fill="%2310b981" opacity="0.1"/><circle cx="80" cy="80" r="3" fill="%2310b981" opacity="0.08"/><circle cx="50" cy="50" r="1.5" fill="%2310b981" opacity="0.12"/></svg>');
-      background-size: 120px 120px;
-      animation: float 20s linear infinite;
-      z-index: 0;
-      pointer-events: none;
+    .c-block{
+      background-color: rgb(255, 255, 255);
+      border: 2px solid rgb(0, 0, 0);
+      
     }
 
-    .main {
-      margin-top: 5.5%;
+    .top-space{
+      margin-top: 5%;
     }
 
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-120px);
-      }
-    }
-
-    .footer-text{
-      font-size: 1em;
-      color:#fff;
-      font-weight: 100;
-    }
-    section {
-    }
-
-    footer{
-      color: #fff;
-      padding-top: 2%;
-      padding-left: 2%;
-      padding-bottom: 2%;
-    }
-
-
-    .des {
-      font-size: medium;
-      padding: 20px 30px 10px 30px;
-      color: #000000;
-    }
-
-    .title-pd {
-      padding-top: 10px;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-
-    .h-text {
-      padding: 5% 1%;
-    }
-
-    .nav-item,
-    .btn-item {
-      margin-left: 5 rem;
-      margin-right: 5 rem;
-      font-weight: 500;
-    }
-
-    .btn-item {
-      background-color: #09271c;
-    }
-
-    .custom-nav,
-    footer,
-    .intro-bg {
-      background: linear-gradient(135deg, #000000 0%, #0b5c3e 100%);
-
-    }
-
-    .custom-nav .navbar-brand,
-    .custom-nav .nav-link,
-    .custom-nav .btn {
-      color: #fff; /* Make text white */
-    }
-
-    .custom-nav .nav-link:hover, .footer-text:hover {
-      color: #66965b ;
-    }
-
-    .custom-nav .navbar-toggler-icon {
-      filter: invert(1); /* Make the mobile icon white */
-    }
-
-    @media (min-width: 768px) {
-      /* md breakpoint */
-      .btn-item,
-      .nav-item {
-        margin-bottom: 0; /* mb-md-0 equivalent */
-        margin-right: 0.5rem; /* me-md-2 equivalent */
-      }
-    }
   </style>
 </head>
 <body>
 <!-- ========================= header start ========================= -->
+  <!-- ========================= SPLASH SCREEN ========================= -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/Image/saveonix-icon.jpg" class="splash-logo" alt="SaveOnix Logo">
+            <h1 class="splash-title">SaveOnix</h1>
+            <p class="splash-tagline">Save Smarter With AI</p>
 
-<!--Header-->
-<header>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
-    <div class="container-xxl">
-      <!-- navbar brand / title -->
-      <a class="navbar-brand" href="#intro">
-        <img
-                src="../Image/saveonix-2.jpg"
-                alt="Logo"
-                width="40"
-                height="40"
-                class="d-inline-block align-text-center"
-        />
-        <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
-        <!-- <img src="assets/saveonix-4.jpg" alt="Logo" width="auto" height="60"
-        class="d-inline-block align-text-center"/> -->
-      </a>
-
-      <!-- toggle button for mobile nav -->
-      <button
-              class="navbar-toggler ms auto"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#main-nav"
-              aria-controls="main-nav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- navbar links -->
-      <div
-              class="collapse navbar-collapse justify-content-center fs-5"
-              id="main-nav"
-      >
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#topics">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#how">How It Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item d-md-none">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-        </ul>
-
-        <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
-<!--          <a class="btn btn-secondary btn-item fs-5" href="#contact"-->
-<!--          >Contact Us</a-->
-<!--          >-->
-          <a class="btn btn-secondary btn-item fs-5" href="#download"
-          >Download</a
-          >
+            <div class="loader-bar"></div>
         </div>
-      </div>
     </div>
-  </nav>
-</header>
+
+    <!-- Begin Main Content -->
+    <div id="main-content" style="opacity: 0;">
+
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      
+      <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html">
+            <img
+              src="/Image/saveonix-icon.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center logo-img"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+              >Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/blank.html"
+              >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 <!-- ========================= header end ========================= -->
+
+
 <section id="intro">
-  <div class="main container-fluid py-5 intro-bg">
+  <div class="top-space main-2">
   <!-- ========================= CONTACT SECTION ========================= -->
   <section id="contact" class="py-5" style="position: relative; z-index: 1;">
     <div class="container">
@@ -203,7 +129,7 @@
       <div class="row g-4">
         <!-- Contact Info -->
         <div class="col-md-5">
-          <div class="p-4 rounded shadow-sm bg-white">
+          <div class="p-4 rounded shadow-sm c-form">
             <h4 class="fw-bold mb-3">Get in Touch</h4>
             <p><strong>Email:</strong> support@saveonix.com</p>
             <p><strong>Phone:</strong> +94 77 123 4567</p>
@@ -213,14 +139,14 @@
 
             <h5 class="fw-bold">Follow Us</h5>
             <div class="d-flex mt-3">
-              <a href="#" class="me-3">
-                <img src="../Image/facebook-icon.png" width="35" />
+              <a href="https://www.facebook.com/profile.php?id=61583363505970" class="me-3">
+                <img src="/Image/facebook-icon.png" width="35" height="35"/>
               </a>
-              <a href="#" class="me-3">
-                <img src="../Image/icons8-instagram-logo-30.png" width="35" />
+              <a href="https://www.instagram.com/save.onix/" class="me-3">
+                <img src="/Image/icons8-instagram-logo-30.png" width="35" height="35"/>
               </a>
-              <a href="#">
-                <img src="../Image/linkedin-icon.png" width="35" />
+              <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="me-3">
+                <img src="/Image/linkedin-icon.png" width="35" height="35"/>
               </a>
             </div>
           </div>
@@ -228,25 +154,25 @@
 
         <!-- Contact Form -->
         <div class="col-md-7">
-          <form class="p-4 rounded shadow-sm bg-white">
+          <form class="p-4 rounded shadow-sm c-form">
             <div class="mb-3">
               <label class="form-label fw-bold">Full Name</label>
-              <input type="text" class="form-control" placeholder="Enter your full name" required>
+              <input type="text" class="form-control c-block" placeholder="Enter your full name" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label fw-bold">Email Address</label>
-              <input type="email" class="form-control" placeholder="Enter your email" required>
+              <input type="email" class="form-control c-block" placeholder="Enter your email" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label fw-bold">Subject</label>
-              <input type="text" class="form-control" placeholder="Enter subject" required>
+              <input type="text" class="form-control c-block" placeholder="Enter subject" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label fw-bold">Message</label>
-              <textarea class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+              <textarea class="form-control c-block" rows="5" placeholder="Write your message..." required></textarea>
             </div>
 
             <button class="btn btn-success btn-lg px-4" type="submit">
@@ -262,81 +188,79 @@
 </section>
 
 
-<footer>
-  <div class="row">
-    <div class="col-5">
-      <ul class="nav list-unstyled d-flex">
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link footer-text p-0">Home &nbsp&nbsp|</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 footer-text">&nbsp&nbsp Features &nbsp&nbsp|</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 footer-text">&nbsp&nbsp How It Works &nbsp&nbsp|</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 footer-text">&nbsp&nbsp About &nbsp&nbsp|</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 footer-text">&nbsp&nbsp Contact us &nbsp&nbsp|</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 footer-text">&nbsp&nbspDownload</a>
-        </li>
-      </ul>
+ <!--</footer> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section col-md-3">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html">Features</a></li>
+              <li><a href="/HTML/pricing.html">Pricing</a></li>
+              <li><a href="/HTML/blank.html">Demo</a></li>
+              <li><a href="/HTML/blank.html">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html">About Us</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+              <li><a href="/HTML/faq.html">FAQs</a></li>
+              <li><a href="/HTML/blank.html">Careers</a></li>
+              <li><a href="/HTML/blank.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/blank.html">Privacy Policy</a></li>
+              <li><a href="/HTML/blank.html">Terms of Service</a></li>
+              <li><a href="/HTML/blank.html">Security</a></li>
+            </ul>
+          </div>
+            <div class="footer-section col-md-2">
+                <h3>Our Socials</h3>
+                <div class="footer-icon">
+                    <div class="wrapper" >
+                        <a href="https://www.facebook.com/profile.php?id=61583363505970" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/save.onix/" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="icon linkedin">
+                            <div class="tooltip">linkedin</div>
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </div>
 
-      <p style="padding-top: 1%; font-weight: 100;">© 2025 Company, Inc. All rights reserved.</p>
+                </div>
+            </div>
 
-
-    </div>
-
-    <div class="col-4" >
-      <p style="padding-bottom: 1%;">Subscribe to our newsletter</p>
-      <form>
-        <div class="d-flex flex-column flex-sm-row w-50 gap-2">
-
-          <input
-                  id="newsletter1"
-                  type="email"
-                  class="form-control"
-                  placeholder="Email address"
-          />
-          <button class="btn btn-success" type="button">Subscribe</button>
         </div>
-      </form>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </footer>
     </div>
 
+    <script src="/js/js/bootstrap.min.js"></script>
+    <script src="/js/js/splash.js"></script>
 
-    <div class="col-2">
-
-      <p class="row" style="padding-top: 1%; font-weight: 500;">Connect With Us!</p>
-
-      <ul class="list-unstyled d-flex" style="padding:0%;">
-        <li class="ms-3">
-          <a  href="#fblink" aria-label="Facebook">
-            <img src="../Image/facebook-icon.png" width="auto" height="35">
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="#" aria-label="Instagram">
-            <img src="../Image/icons8-instagram-logo-30.png" width="auto" height="35">
-          </a>
-        </li>
-        <li class="ms-3">
-          <a href="#" aria-label="LinkedIn">
-            <img src="../Image/linkedin-icon.png" width="auto" height="35">
-          </a>
-        </li>
-      </ul>
-
-
-    </div>
-  </div>
-</footer>
-
-
-<!-- Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js"></script>
+   
 </body>
 </html>
