@@ -4,27 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaveOnix - Save Smarter With AI</title>
+
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/CSS/baseStyle.css"/>
     <link rel="stylesheet" href="/CSS/home.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    <link rel="icon" type="image/x-icon" href="/Image/saveonix-icon.jpg" />
+    
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <img src="/Image/" alt="Logo">
-            </div>
+  <!-- ========================= SPLASH SCREEN ========================= -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/Image/saveonix-icon.jpg" class="splash-logo" alt="SaveOnix Logo">
+            <h1 class="splash-title">SaveOnix</h1>
+            <p class="splash-tagline">Save Smarter With AI</p>
 
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#about">About</a>
-                <a href="#download" class="btn-primary">Download App</a>
-            </div>
+            <div class="loader-bar"></div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Begin Main Content -->
+    <div id="main-content" style="opacity: 0;">
+
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      
+      <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html">
+            <img
+              src="/Image/saveonix-icon.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center logo-img"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+              >Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/blank.html"
+              >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     
-    <section class="hero">
+    <section class="hero main-2">
         <div class="container">
             <div class="hero-content">
                 <h1 class="gradient-text"> Take Control Of Your Finances - With Our AI Buddy</h1>
@@ -125,58 +194,51 @@
                     <div class="feature-icon">⚙️</div>
                     <h3>Automatic expense categorization</h3>
                     <p>Automatically sorts your expenses into categories so you can see where your money goes without any manual effort</p>
-                </div
-
-                 
-
-
-                
-                
-
+                </div>     
             </div>
         </div>
     </section>
-
-
   
-    
-
+    <!--</footer> -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>SaveOnix</h3>
-                    <p>Your AI-powered financial companion for smarter savings and better financial decisions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Product</h3>
-                    <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#download">Download</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section" style="position: relative;right: 100px;">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-section"style="position: relative;right: 150px;">
-                    <h3>Legal</h3>
-                    <ul>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#terms">Terms of Service</a></li>
-                        <li><a href="#security">Security</a></li>
-                    </ul>
-                    
-                    
-                    
-                </div>
-
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section col-md-3">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html">Features</a></li>
+              <li><a href="/HTML/pricing.html">Pricing</a></li>
+              <li><a href="/HTML/blank.html">Demo</a></li>
+              <li><a href="/HTML/blank.html">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html">About Us</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+              <li><a href="/HTML/faq.html">FAQs</a></li>
+              <li><a href="/HTML/blank.html">Careers</a></li>
+              <li><a href="/HTML/blank.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/blank.html">Privacy Policy</a></li>
+              <li><a href="/HTML/blank.html">Terms of Service</a></li>
+              <li><a href="/HTML/blank.html">Security</a></li>
+            </ul>
+          </div>
+            <div class="footer-section col-md-2">
+                <h3>Our Socials</h3>
                 <div class="footer-icon">
                     <div class="wrapper" >
                         <a href="https://www.facebook.com/profile.php?id=61583363505970" class="icon facebook">
@@ -196,17 +258,19 @@
                     </div>
 
                 </div>
-
-                    
-
-                
-  
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 SaveOnix. All rights reserved.</p>
-            </div>
+
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+    </footer>
+    </div>
+
+    <script src="/js/js/bootstrap.min.js"></script>
+    <script src="/js/js/splash.js"></script>
 
    
 </body>
