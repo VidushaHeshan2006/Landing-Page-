@@ -1,47 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #000;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-/* NAV */
-nav {
-    background: rgba(0, 0, 0, 0.95);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links a {
-    color: #9ca3af;
-    margin-left: 25px;
-    text-decoration: none;
-    transition: .3s;
-}
-.nav-links a:hover {
-    color: #10b981;
-}
 
 .btn-primary {
     background: linear-gradient(135deg, #10b981, #059669);
@@ -161,13 +123,6 @@ nav .container {
     font-size: 18px;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px 0;
-    color: #6b7280;
-    border-top: 1px solid rgba(16, 185, 129, 0.2);
-}
 
 /* ANIMATIONS */
 @keyframes fadeInUp {
