@@ -153,7 +153,7 @@ section {
     transition: color 0.3s ease;
 }
 
-/* ⭐ NEW — underline hover effect */
+/* NEW — underline hover effect */
 .custom-nav .nav-link::after {
     content: "";
     position: absolute;
@@ -170,7 +170,7 @@ section {
     width: 100%;
 }
 
-/* ⭐ NEW — active highlight */
+/* NEW — active highlight */
 .custom-nav .nav-link.active {
     color: #10b981 !important;
 }
@@ -355,33 +355,28 @@ footer {
     
 }
 
-/* FORCE NAVBAR COLLAPSE AT 850px */
+/* Make the navbar collapse icon appear at 850px */
 @media (max-width: 850px) {
+  .navbar-expand-md .navbar-toggler {
+    display: block; /* always show hamburger below 850px */
+  }
 
-    /* Hide the expanded nav links */
-    .navbar-expand-md .navbar-collapse {
-        display: none !important;
-    }
-
-    /* Show the hamburger button */
-    .navbar-expand-md .navbar-toggler {
-        display: block !important;
-    }
+  .navbar-expand-md .navbar-collapse {
+    flex-basis: 100%;
+    justify-content: center;
+  }
 }
 
-/* Expand above 850px */
 @media (min-width: 851px) {
+  .navbar-expand-md .navbar-toggler {
+    display: none; /* hide hamburger above 850px */
+  }
 
-    /* Show the full nav */
-    .navbar-expand-md .navbar-collapse {
-        display: flex !important;
-    }
-
-    /* Hide the hamburger button */
-    .navbar-expand-md .navbar-toggler {
-        display: none !important;
-    }
+  .navbar-expand-md .navbar-collapse {
+    display: flex; /* keep nav links horizontal */
+  }
 }
+
 
 @media (max-width: 1500px) {
     .main{
