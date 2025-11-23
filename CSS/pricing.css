@@ -1,39 +1,3 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #e5e7eb;
-  overflow-x: hidden;
-  background: linear-gradient(135deg, #000000 0%, #0b5c3e 100%);
-  animation: fadeIn 1s ease-in-out;
-  position: relative;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="2" fill="%2310b981" opacity="0.1"/><circle cx="80" cy="80" r="3" fill="%2310b981" opacity="0.08"/><circle cx="50" cy="50" r="1.5" fill="%2310b981" opacity="0.12"/></svg>');
-  background-size: 120px 120px;
-  animation: float 20s linear infinite;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* HEADER */
-header {
-  background: #116233b7;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-}
-
 /* PRICING CARDS */
 .pricing-section {
     padding: 50px 20px;
@@ -43,8 +7,8 @@ header {
 .pricing-title {
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 20px;
-    color: #1ae858;
+    margin-bottom: 5%;
+    color: #ffffff;
 }
 
 /* Pricing cards container */
@@ -112,7 +76,7 @@ header {
 }
 
 /* Button */
-.btn {
+.btn-press {
     margin-top: 20px;
     display: inline-block;
     padding: 12px 25px;
@@ -124,7 +88,7 @@ header {
     transition: 0.3s ease;
 }
 
-.btn:hover {
+.btn-press:hover {
     background: #15b04e;
     box-shadow: 0 0 10px rgba(26, 232, 112, 0.7);
 }
@@ -174,7 +138,7 @@ header {
 }
 
 input:checked + .slider {
-  background: #1ae881;
+  background: #15b04e;
 }
 
 input:checked + .slider:before {
@@ -192,9 +156,9 @@ input:checked + .slider:before {
 .section-title {
   text-align: center;
   font-size: 32px;
-  color: #1ae847c0;
+  color: white;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .comparison-table {
@@ -210,7 +174,7 @@ input:checked + .slider:before {
 }
 
 .table-header div {
-  background: #1ae847c9;
+  background: #15b04e;
   color: black;
   font-weight: bold;
 }

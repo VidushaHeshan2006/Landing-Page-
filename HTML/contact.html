@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+  <link href="/CSS/baseStyle.css" rel="stylesheet" />
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  
+  
+  <link rel="icon" type="image/x-icon" href="/Image/saveonix-icon.jpg" />
+
+  <style>
+    .c-form{
+      background: #0a3d2a89;
+    }
+
+    .c-block{
+      background-color: rgb(255, 255, 255);
+      border: 2px solid rgb(0, 0, 0);
+      
+    }
+
+    .top-space{
+      margin-top: 5%;
+    }
+
+  </style>
+</head>
+<body>
+<!-- ========================= header start ========================= -->
+  <!-- ========================= SPLASH SCREEN ========================= -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="/Image/saveonix-icon.jpg" class="splash-logo" alt="SaveOnix Logo">
+            <h1 class="splash-title">SaveOnix</h1>
+            <p class="splash-tagline">Save Smarter With AI</p>
+
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Begin Main Content -->
+    <div id="main-content" style="opacity: 0;">
+
+    <!--Header-->
+    <header>
+      <!-- navbar -->
+      
+      <nav class="navbar navbar-expand-md custom-nav pt-3 pb-3 fixed-top">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="/HTML/home.html">
+            <img
+              src="/Image/saveonix-icon.jpg"
+              alt="Logo"
+              width="40"
+              height="40"
+              class="d-inline-block align-text-center logo-img"
+            />
+            <span class="text-white fw-bold fs-4 title-pd"> SaveOnix </span>
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-center fs-5"
+            id="main-nav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/how-it-works.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/pricing.html">Pricing</a>
+              </li>
+            </ul>
+
+            <div class="d-flex flex-column flex-md-row mt-3 mt-md-0 ms-md-3">
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/contact.html"
+              >Contact Us</a
+              >
+              <a class="btn btn-secondary btn-item fs-5" href="/HTML/blank.html"
+              >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- ========================= header end ========================= -->
+
+
+<section id="intro">
+  <div class="top-space main-2">
+  <!-- ========================= CONTACT SECTION ========================= -->
+  <section id="contact" class="py-5" style="position: relative; z-index: 1;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-white">Contact Us</h2>
+        <p class="text-muted text-white">We’d love to hear from you. Send us a message!</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Info -->
+        <div class="col-md-5">
+          <div class="p-4 rounded shadow-sm c-form">
+            <h4 class="fw-bold mb-3">Get in Touch</h4>
+            <p><strong>Email:</strong> support@saveonix.com</p>
+            <p><strong>Phone:</strong> +94 77 123 4567</p>
+            <p><strong>Address:</strong> Colombo, Sri Lanka</p>
+
+            <hr>
+
+            <h5 class="fw-bold">Follow Us</h5>
+            <div class="d-flex mt-3">
+              <a href="https://www.facebook.com/profile.php?id=61583363505970" class="me-3">
+                <img src="/Image/facebook-icon.png" width="35" height="35"/>
+              </a>
+              <a href="https://www.instagram.com/save.onix/" class="me-3">
+                <img src="/Image/icons8-instagram-logo-30.png" width="35" height="35"/>
+              </a>
+              <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="me-3">
+                <img src="/Image/linkedin-icon.png" width="35" height="35"/>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <form class="p-4 rounded shadow-sm c-form">
+            <div class="mb-3">
+              <label class="form-label fw-bold">Full Name</label>
+              <input type="text" class="form-control c-block" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Email Address</label>
+              <input type="email" class="form-control c-block" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Subject</label>
+              <input type="text" class="form-control c-block" placeholder="Enter subject" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Message</label>
+              <textarea class="form-control c-block" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="btn btn-success btn-lg px-4" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========================= CONTACT SECTION END ========================= -->
+  </div>
+</section>
+
+
+ <!--</footer> -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section col-md-3">
+            <h3>SaveOnix</h3>
+            <p>
+              Your AI-powered financial companion for smarter savings and better
+              financial decisions.
+            </p>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="/HTML/features.html">Features</a></li>
+              <li><a href="/HTML/pricing.html">Pricing</a></li>
+              <li><a href="/HTML/blank.html">Demo</a></li>
+              <li><a href="/HTML/blank.html">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/HTML/about.html">About Us</a></li>
+              <li><a href="/HTML/contact.html">Contact</a></li>
+              <li><a href="/HTML/faq.html">FAQs</a></li>
+              <li><a href="/HTML/blank.html">Careers</a></li>
+              <li><a href="/HTML/blank.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section col-md-2">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/HTML/blank.html">Privacy Policy</a></li>
+              <li><a href="/HTML/blank.html">Terms of Service</a></li>
+              <li><a href="/HTML/blank.html">Security</a></li>
+            </ul>
+          </div>
+            <div class="footer-section col-md-2">
+                <h3>Our Socials</h3>
+                <div class="footer-icon">
+                    <div class="wrapper" >
+                        <a href="https://www.facebook.com/profile.php?id=61583363505970" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/save.onix/" class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                    
+                        <a href="https://www.linkedin.com/in/saveonix-6baa91391/" class="icon linkedin">
+                            <div class="tooltip">linkedin</div>
+                            <span><i class="fab fa-linkedin-in"></i></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SaveOnix. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" 
+    crossorigin="anonymous"></script>
+    <script src="/js/js/splash.js"></script>
+
+   
+</body>
+</html>
